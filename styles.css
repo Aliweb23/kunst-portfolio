@@ -1,25 +1,23 @@
 /* styles.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background: #333333;
+    background: linear-gradient(45deg, #ff6b6b, #f94d6d);
     color: #fff;
-    padding: 10px 0;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 20px 0;
+    text-align: center;
 }
 
 header h1 {
     margin: 0;
+    font-size: 2.5em;
 }
 
 nav ul {
@@ -27,19 +25,22 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin: 0;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
 section {
-    padding: 20px 0;
+    padding: 60px 0;
 }
 
 .container {
@@ -48,57 +49,93 @@ section {
     margin: 0 auto;
 }
 
-.about p {
+.about, .contact {
+    text-align: center;
+}
+
+.about p, .contact form {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .gallery .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
+    gap: 15px;
 }
 
 .gallery .grid-item {
     overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery .grid-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .gallery .grid-item img {
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 10px;
 }
 
 .contact form {
-    max-width: 600px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 .contact label {
-    margin-top: 10px;
+    text-align: left;
 }
 
 .contact input,
 .contact textarea {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
 }
 
 .contact button {
-    margin-top: 10px;
     padding: 10px;
-    background: #333;
+    background: #ff6b6b;
     color: #fff;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.contact button:hover {
+    background: #f94d6d;
 }
 
 footer {
-    background: #333;
+    background: #ff6b6b;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
+    position: relative;
+}
+
+footer .social-media {
+    margin-top: 10px;
+}
+
+footer .social-media a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+footer .social-media a:hover {
+    color: #2e73e0;
 }
