@@ -111,10 +111,10 @@ section {
 .gallery .grid-item p:hover{
     color: #ea1616;
     background: #f9f9f9; 
-    padding: 5px;
-    border-radius: 5px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
-    transform: scale(1.05); 
+    padding: 5px; /* Padding hinzufügen für einen "Button"-Effekt */
+    border-radius: 5px; /* Abgerundete Ecken für ein moderneres Aussehen */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Schatten hinzufügen */
+    transform: scale(1.05); /* Leichte Vergrößerung für mehr Aufmerksamkeit */
 }
 
 .contact form {
