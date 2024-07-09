@@ -106,6 +106,15 @@ section {
     margin: 10px 0 0 0;
     font-size: 0.9em;
     color: #666;
+    transition: all 0.3s ease; 
+}
+.gallery .grid-item p:hover{
+    color: #ea1616;
+    background: #f9f9f9; 
+    padding: 5px;
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05); 
 }
 
 .contact form {
